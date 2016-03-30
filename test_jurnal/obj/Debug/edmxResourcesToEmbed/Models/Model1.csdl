@@ -1,0 +1,249 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="test2Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Занятия">
+    <Key>
+      <PropertyRef Name="id_занятия" />
+    </Key>
+    <Property Name="Номер_занятия" Type="Int32" />
+    <Property Name="Тип_занятия" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Код_предмета" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="UserId" Type="Int32" Nullable="false" />
+    <Property Name="Тема" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="Группа1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Группа2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Группа3" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="id_занятия" Type="Int32" Nullable="false" />
+    <Property Name="Дата" Type="DateTime" Precision="3" />
+    <Property Name="Примечание" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="Подгруппа" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Предметы" Relationship="Self.R_13" FromRole="Занятия" ToRole="Предметы" />
+    <NavigationProperty Name="Студенты_занятия" Relationship="Self.R_17" FromRole="Занятия" ToRole="Студенты_занятия" />
+  </EntityType>
+  <EntityType Name="Предметы">
+    <Key>
+      <PropertyRef Name="Код_предмета" />
+    </Key>
+    <Property Name="Код_предмета" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Название" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Количество_часов" Type="Int32" />
+    <Property Name="UserId" Type="Int32" />
+    <NavigationProperty Name="Занятия" Relationship="Self.R_13" FromRole="Предметы" ToRole="Занятия" />
+    <NavigationProperty Name="Студенты_Предметы" Relationship="Self.R_12" FromRole="Предметы" ToRole="Студенты_Предметы" />
+    <NavigationProperty Name="Расписание" Relationship="Self.R_20" FromRole="Предметы" ToRole="Расписание" />
+  </EntityType>
+  <EntityType Name="Расписание">
+    <Key>
+      <PropertyRef Name="id_расписания" />
+    </Key>
+    <Property Name="День_недели" Type="Int32" />
+    <Property Name="Номер_пары" Type="Int32" />
+    <Property Name="Код_предмета" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="UserId" Type="Int32" />
+    <Property Name="Номер_аудитории" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Группа1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Группа2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Группа3" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="id_расписания" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Тип_занятия" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Примечание" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="Верхняя_неделя" Type="Boolean" />
+    <Property Name="Нижняя_неделя" Type="Boolean" />
+    <Property Name="Типовая_неделя" Type="Boolean" />
+    <Property Name="Нетиповая_неделя" Type="Boolean" />
+    <Property Name="Время" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="Подгруппа" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Предметы" Relationship="Self.R_20" FromRole="Расписание" ToRole="Предметы" />
+  </EntityType>
+  <EntityType Name="Студенты">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Фамилия" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Имя" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Отчество" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Дата_рождения" Type="DateTime" Precision="3" />
+    <Property Name="Подгруппа" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Группа" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Студенты_Предметы" Relationship="Self.R_11" FromRole="Студенты" ToRole="Студенты_Предметы" />
+    <NavigationProperty Name="Студенты_занятия" Relationship="Self.R_16" FromRole="Студенты" ToRole="Студенты_занятия" />
+  </EntityType>
+  <EntityType Name="Студенты_занятия">
+    <Key>
+      <PropertyRef Name="Номер_зачетки" />
+      <PropertyRef Name="id_занятия" />
+    </Key>
+    <Property Name="Номер_зачетки" Type="Int32" Nullable="false" />
+    <Property Name="Явка" Type="Boolean" />
+    <Property Name="Оценка" Type="Double" />
+    <Property Name="id_занятия" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Занятия" Relationship="Self.R_17" FromRole="Студенты_занятия" ToRole="Занятия" />
+    <NavigationProperty Name="Студенты" Relationship="Self.R_16" FromRole="Студенты_занятия" ToRole="Студенты" />
+  </EntityType>
+  <EntityType Name="Студенты_Предметы">
+    <Key>
+      <PropertyRef Name="Номер_зачетки" />
+      <PropertyRef Name="Код_предмета" />
+    </Key>
+    <Property Name="Номер_зачетки" Type="Int32" Nullable="false" />
+    <Property Name="Код_предмета" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Рейтинг" Type="Double" />
+    <NavigationProperty Name="Предметы" Relationship="Self.R_12" FromRole="Студенты_Предметы" ToRole="Предметы" />
+    <NavigationProperty Name="Студенты" Relationship="Self.R_11" FromRole="Студенты_Предметы" ToRole="Студенты" />
+  </EntityType>
+  <Association Name="R_13">
+    <End Role="Предметы" Type="Self.Предметы" Multiplicity="1" />
+    <End Role="Занятия" Type="Self.Занятия" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Предметы">
+        <PropertyRef Name="Код_предмета" />
+      </Principal>
+      <Dependent Role="Занятия">
+        <PropertyRef Name="Код_предмета" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_17">
+    <End Role="Занятия" Type="Self.Занятия" Multiplicity="1" />
+    <End Role="Студенты_занятия" Type="Self.Студенты_занятия" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Занятия">
+        <PropertyRef Name="id_занятия" />
+      </Principal>
+      <Dependent Role="Студенты_занятия">
+        <PropertyRef Name="id_занятия" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_12">
+    <End Role="Предметы" Type="Self.Предметы" Multiplicity="1" />
+    <End Role="Студенты_Предметы" Type="Self.Студенты_Предметы" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Предметы">
+        <PropertyRef Name="Код_предмета" />
+      </Principal>
+      <Dependent Role="Студенты_Предметы">
+        <PropertyRef Name="Код_предмета" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_20">
+    <End Role="Предметы" Type="Self.Предметы" Multiplicity="0..1" />
+    <End Role="Расписание" Type="Self.Расписание" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Предметы">
+        <PropertyRef Name="Код_предмета" />
+      </Principal>
+      <Dependent Role="Расписание">
+        <PropertyRef Name="Код_предмета" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_11">
+    <End Role="Студенты" Type="Self.Студенты" Multiplicity="1" />
+    <End Role="Студенты_Предметы" Type="Self.Студенты_Предметы" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Студенты">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Студенты_Предметы">
+        <PropertyRef Name="Номер_зачетки" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_16">
+    <End Role="Студенты" Type="Self.Студенты" Multiplicity="1" />
+    <End Role="Студенты_занятия" Type="Self.Студенты_занятия" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Студенты">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Студенты_занятия">
+        <PropertyRef Name="Номер_зачетки" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="test2Entities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Занятия" EntityType="Self.Занятия" />
+    <EntitySet Name="Предметы" EntityType="Self.Предметы" />
+    <EntitySet Name="Расписание" EntityType="Self.Расписание" />
+    <EntitySet Name="Студенты" EntityType="Self.Студенты" />
+    <EntitySet Name="Студенты_занятия" EntityType="Self.Студенты_занятия" />
+    <EntitySet Name="Студенты_Предметы" EntityType="Self.Студенты_Предметы" />
+    <AssociationSet Name="R_13" Association="Self.R_13">
+      <End Role="Предметы" EntitySet="Предметы" />
+      <End Role="Занятия" EntitySet="Занятия" />
+    </AssociationSet>
+    <AssociationSet Name="R_17" Association="Self.R_17">
+      <End Role="Занятия" EntitySet="Занятия" />
+      <End Role="Студенты_занятия" EntitySet="Студенты_занятия" />
+    </AssociationSet>
+    <AssociationSet Name="R_12" Association="Self.R_12">
+      <End Role="Предметы" EntitySet="Предметы" />
+      <End Role="Студенты_Предметы" EntitySet="Студенты_Предметы" />
+    </AssociationSet>
+    <AssociationSet Name="R_20" Association="Self.R_20">
+      <End Role="Предметы" EntitySet="Предметы" />
+      <End Role="Расписание" EntitySet="Расписание" />
+    </AssociationSet>
+    <AssociationSet Name="R_11" Association="Self.R_11">
+      <End Role="Студенты" EntitySet="Студенты" />
+      <End Role="Студенты_Предметы" EntitySet="Студенты_Предметы" />
+    </AssociationSet>
+    <AssociationSet Name="R_16" Association="Self.R_16">
+      <End Role="Студенты" EntitySet="Студенты" />
+      <End Role="Студенты_занятия" EntitySet="Студенты_занятия" />
+    </AssociationSet>
+    <FunctionImport Name="Расписание_препода" ReturnType="Collection(test2Model.Расписание_препода_Result)">
+      <Parameter Name="param" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="ИдПредмет">
+      <Parameter Name="param" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="РасписаниеДатаПрепод" ReturnType="Collection(test2Model.РасписаниеДатаПрепод_Result)">
+      <Parameter Name="param" Mode="In" Type="Int32" />
+      <Parameter Name="param1" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="Grup" ReturnType="Collection(String)" />
+  </EntityContainer>
+  <ComplexType Name="Расписание_препода_Result">
+    <Property Type="Int32" Name="День_недели" Nullable="true" />
+    <Property Type="Int32" Name="Номер_пары" Nullable="true" />
+    <Property Type="String" Name="Код_предмета" Nullable="true" MaxLength="50" />
+    <Property Type="Int32" Name="UserId" Nullable="true" />
+    <Property Type="String" Name="Номер_аудитории" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Группа1" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Группа2" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Группа3" Nullable="true" MaxLength="50" />
+    <Property Type="Int32" Name="id_расписания" Nullable="false" />
+    <Property Type="String" Name="Тип_занятия" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Примечание" Nullable="true" MaxLength="150" />
+    <Property Type="Boolean" Name="Верхняя_неделя" Nullable="true" />
+    <Property Type="Boolean" Name="Нижняя_неделя" Nullable="true" />
+    <Property Type="Boolean" Name="Типовая_неделя" Nullable="true" />
+    <Property Type="Boolean" Name="Нетиповая_неделя" Nullable="true" />
+    <Property Type="String" Name="Время" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="Подгруппа" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Название" Nullable="true" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="РасписаниеДатаПрепод_Result">
+    <Property Type="Int32" Name="День_недели" Nullable="true" />
+    <Property Type="Int32" Name="Номер_пары" Nullable="true" />
+    <Property Type="String" Name="Код_предмета" Nullable="true" MaxLength="50" />
+    <Property Type="Int32" Name="UserId" Nullable="true" />
+    <Property Type="String" Name="Номер_аудитории" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Группа1" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Группа2" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Группа3" Nullable="true" MaxLength="50" />
+    <Property Type="Int32" Name="id_расписания" Nullable="false" />
+    <Property Type="String" Name="Тип_занятия" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Примечание" Nullable="true" MaxLength="150" />
+    <Property Type="Boolean" Name="Верхняя_неделя" Nullable="true" />
+    <Property Type="Boolean" Name="Нижняя_неделя" Nullable="true" />
+    <Property Type="Boolean" Name="Типовая_неделя" Nullable="true" />
+    <Property Type="Boolean" Name="Нетиповая_неделя" Nullable="true" />
+    <Property Type="String" Name="Время" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="Подгруппа" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Название" Nullable="true" MaxLength="50" />
+  </ComplexType>
+</Schema>

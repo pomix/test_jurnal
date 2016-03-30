@@ -1,0 +1,44 @@
+﻿@model test_jurnal.Models.RegisterModel
+@{
+    ViewBag.Title = "Регистрация";
+}
+<div id="body">
+    <hgroup class="title">
+        <h1>@ViewBag.Title.</h1>
+        <h2>Создание новой учетной записи.</h2>
+    </hgroup>
+    <form action="/Account/Register" method="post" class="form-group form-inline">
+
+        @Html.AntiForgeryToken()
+        @Html.ValidationSummary()
+
+        <fieldset>
+            <legend>Форма регистрации</legend>
+            
+            <div class="row">
+                <div class="col-sm-2">@Html.LabelFor(m => m.UserName)</div>
+                <div class="col-sm-1">@Html.TextBoxFor(m => m.UserName)</div>
+            </div>
+                
+            <div class="row">
+                <div class="col-sm-2" >
+                    @Html.LabelFor(m => m.Password)
+                </div>
+                <div class="col-sm-1">@Html.PasswordFor(m => m.Password)</div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2">@Html.LabelFor(m => m.ConfirmPassword)</div>
+                <div class="col-sm-2">
+                    @Html.PasswordFor(m => m.ConfirmPassword)
+            </div>
+
+        </div>
+
+            <input type="submit" class="btn btn-success" value="Регистрация" />
+        </fieldset>
+    </form>
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

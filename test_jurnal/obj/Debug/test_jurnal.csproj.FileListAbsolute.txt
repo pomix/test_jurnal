@@ -1,0 +1,209 @@
+c:\users\user\documents\visual studio 2013\Projects\test_jurnal\test_jurnal\bin\test_jurnal.dll.config
+c:\users\user\documents\visual studio 2013\Projects\test_jurnal\test_jurnal\bin\test_jurnal.dll
+c:\users\user\documents\visual studio 2013\Projects\test_jurnal\test_jurnal\bin\test_jurnal.pdb
+c:\users\user\documents\visual studio 2013\Projects\test_jurnal\test_jurnal\bin\Antlr3.Runtime.dll
+c:\users\user\documents\visual studio 2013\Projects\test_jurnal\test_jurnal\bin\DotNetOpenAuth.AspNet.dll
+c:\users\user\documents\visual studio 2013\Projects\test_jurnal\test_jurnal\bin\DotNetOpenAuth.Core.dll
+c:\users\user\documents\visual studio 2013\Projects\test_jurnal\test_jurnal\bin\DotNetOpenAuth.OAuth.Consumer.dll
+c:\users\user\documents\visual studio 2013\Projects\test_jurnal\test_jurnal\bin\DotNetOpenAuth.OAuth.dll
+c:\users\user\documents\visual studio 2013\Projects\test_jurnal\test_jurnal\bin\DotNetOpenAuth.OpenId.dll
+c:\users\user\documents\visual studio 2013\Projects\test_jurnal\test_jurnal\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+c:\users\user\documents\visual studio 2013\Projects\test_jurnal\test_jurnal\bin\EntityFramework.dll
+c:\users\user\documents\visual studio 2013\Projects\test_jurnal\test_jurnal\bin\Microsoft.Data.Edm.dll
+c:\users\user\documents\visual studio 2013\Projects\test_jurnal\test_jurnal\bin\Microsoft.Data.OData.dll
+c:\users\user\documents\visual studio 2013\Projects\test_jurnal\test_jurnal\bin\Microsoft.Web.Infrastructure.dll
+c:\users\user\documents\visual studio 2013\Projects\test_jurnal\test_jurnal\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+c:\users\user\documents\visual studio 2013\Projects\test_jurnal\test_jurnal\bin\Microsoft.Web.WebPages.OAuth.dll
+c:\users\user\documents\visual studio 2013\Projects\test_jurnal\test_jurnal\bin\Newtonsoft.Json.dll
+c:\users\user\documents\visual studio 2013\Projects\test_jurnal\test_jurnal\bin\System.Net.Http.Formatting.dll
+c:\users\user\documents\visual studio 2013\Projects\test_jurnal\test_jurnal\bin\System.Spatial.dll
+c:\users\user\documents\visual studio 2013\Projects\test_jurnal\test_jurnal\bin\System.Web.Helpers.dll
+c:\users\user\documents\visual studio 2013\Projects\test_jurnal\test_jurnal\bin\System.Web.Http.dll
+c:\users\user\documents\visual studio 2013\Projects\test_jurnal\test_jurnal\bin\System.Web.Http.OData.dll
+c:\users\user\documents\visual studio 2013\Projects\test_jurnal\test_jurnal\bin\System.Web.Http.WebHost.dll
+c:\users\user\documents\visual studio 2013\Projects\test_jurnal\test_jurnal\bin\System.Web.Mvc.dll
+c:\users\user\documents\visual studio 2013\Projects\test_jurnal\test_jurnal\bin\System.Web.Optimization.dll
+c:\users\user\documents\visual studio 2013\Projects\test_jurnal\test_jurnal\bin\System.Web.Razor.dll
+c:\users\user\documents\visual studio 2013\Projects\test_jurnal\test_jurnal\bin\System.Web.WebPages.Deployment.dll
+c:\users\user\documents\visual studio 2013\Projects\test_jurnal\test_jurnal\bin\System.Web.WebPages.dll
+c:\users\user\documents\visual studio 2013\Projects\test_jurnal\test_jurnal\bin\System.Web.WebPages.Razor.dll
+c:\users\user\documents\visual studio 2013\Projects\test_jurnal\test_jurnal\bin\WebGrease.dll
+c:\users\user\documents\visual studio 2013\Projects\test_jurnal\test_jurnal\bin\WebMatrix.Data.dll
+c:\users\user\documents\visual studio 2013\Projects\test_jurnal\test_jurnal\bin\WebMatrix.WebData.dll
+c:\users\user\documents\visual studio 2013\Projects\test_jurnal\test_jurnal\bin\EntityFramework.xml
+c:\users\user\documents\visual studio 2013\Projects\test_jurnal\test_jurnal\bin\Newtonsoft.Json.xml
+c:\users\user\documents\visual studio 2013\Projects\test_jurnal\test_jurnal\bin\System.Net.Http.Formatting.xml
+c:\users\user\documents\visual studio 2013\Projects\test_jurnal\test_jurnal\bin\System.Web.Helpers.xml
+c:\users\user\documents\visual studio 2013\Projects\test_jurnal\test_jurnal\bin\System.Web.Http.xml
+c:\users\user\documents\visual studio 2013\Projects\test_jurnal\test_jurnal\bin\System.Web.Http.WebHost.xml
+c:\users\user\documents\visual studio 2013\Projects\test_jurnal\test_jurnal\bin\System.Web.Mvc.xml
+c:\users\user\documents\visual studio 2013\Projects\test_jurnal\test_jurnal\bin\System.Web.Razor.xml
+c:\users\user\documents\visual studio 2013\Projects\test_jurnal\test_jurnal\bin\System.Web.WebPages.xml
+c:\users\user\documents\visual studio 2013\Projects\test_jurnal\test_jurnal\bin\System.Web.WebPages.Deployment.xml
+c:\users\user\documents\visual studio 2013\Projects\test_jurnal\test_jurnal\bin\System.Web.WebPages.Razor.xml
+c:\users\user\documents\visual studio 2013\Projects\test_jurnal\test_jurnal\bin\WebMatrix.Data.xml
+c:\users\user\documents\visual studio 2013\Projects\test_jurnal\test_jurnal\bin\Microsoft.Web.WebPages.OAuth.xml
+c:\users\user\documents\visual studio 2013\Projects\test_jurnal\test_jurnal\bin\WebMatrix.WebData.xml
+c:\users\user\documents\visual studio 2013\Projects\test_jurnal\test_jurnal\bin\DotNetOpenAuth.AspNet.xml
+c:\users\user\documents\visual studio 2013\Projects\test_jurnal\test_jurnal\bin\DotNetOpenAuth.Core.xml
+c:\users\user\documents\visual studio 2013\Projects\test_jurnal\test_jurnal\bin\DotNetOpenAuth.OAuth.Consumer.xml
+c:\users\user\documents\visual studio 2013\Projects\test_jurnal\test_jurnal\bin\DotNetOpenAuth.OAuth.xml
+c:\users\user\documents\visual studio 2013\Projects\test_jurnal\test_jurnal\bin\DotNetOpenAuth.OpenId.xml
+c:\users\user\documents\visual studio 2013\Projects\test_jurnal\test_jurnal\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+c:\users\user\documents\visual studio 2013\Projects\test_jurnal\test_jurnal\bin\System.Web.Http.OData.xml
+c:\users\user\documents\visual studio 2013\Projects\test_jurnal\test_jurnal\bin\Microsoft.Data.Edm.xml
+c:\users\user\documents\visual studio 2013\Projects\test_jurnal\test_jurnal\bin\Microsoft.Data.OData.xml
+c:\users\user\documents\visual studio 2013\Projects\test_jurnal\test_jurnal\bin\System.Spatial.xml
+c:\users\user\documents\visual studio 2013\Projects\test_jurnal\test_jurnal\bin\ru\EntityFramework.resources.dll
+c:\users\user\documents\visual studio 2013\Projects\test_jurnal\test_jurnal\bin\ru\System.Net.Http.Formatting.resources.dll
+c:\users\user\documents\visual studio 2013\Projects\test_jurnal\test_jurnal\bin\ru\System.Web.Helpers.resources.dll
+c:\users\user\documents\visual studio 2013\Projects\test_jurnal\test_jurnal\bin\ru\System.Web.Http.resources.dll
+c:\users\user\documents\visual studio 2013\Projects\test_jurnal\test_jurnal\bin\ru\System.Web.Http.WebHost.resources.dll
+c:\users\user\documents\visual studio 2013\Projects\test_jurnal\test_jurnal\bin\ru\System.Web.Mvc.resources.dll
+c:\users\user\documents\visual studio 2013\Projects\test_jurnal\test_jurnal\bin\ru\System.Web.Optimization.resources.dll
+c:\users\user\documents\visual studio 2013\Projects\test_jurnal\test_jurnal\bin\ru\System.Web.Razor.resources.dll
+c:\users\user\documents\visual studio 2013\Projects\test_jurnal\test_jurnal\bin\ru\System.Web.WebPages.resources.dll
+c:\users\user\documents\visual studio 2013\Projects\test_jurnal\test_jurnal\bin\ru\System.Web.WebPages.Deployment.resources.dll
+c:\users\user\documents\visual studio 2013\Projects\test_jurnal\test_jurnal\bin\ru\System.Web.WebPages.Razor.resources.dll
+c:\users\user\documents\visual studio 2013\Projects\test_jurnal\test_jurnal\bin\ru\WebMatrix.Data.resources.dll
+c:\users\user\documents\visual studio 2013\Projects\test_jurnal\test_jurnal\bin\ru\Microsoft.Web.WebPages.OAuth.resources.dll
+c:\users\user\documents\visual studio 2013\Projects\test_jurnal\test_jurnal\bin\ru\WebMatrix.WebData.resources.dll
+c:\users\user\documents\visual studio 2013\Projects\test_jurnal\test_jurnal\bin\ru\System.Web.Http.OData.resources.dll
+c:\users\user\documents\visual studio 2013\Projects\test_jurnal\test_jurnal\bin\de\Microsoft.Data.Edm.resources.dll
+c:\users\user\documents\visual studio 2013\Projects\test_jurnal\test_jurnal\bin\es\Microsoft.Data.Edm.resources.dll
+c:\users\user\documents\visual studio 2013\Projects\test_jurnal\test_jurnal\bin\fr\Microsoft.Data.Edm.resources.dll
+c:\users\user\documents\visual studio 2013\Projects\test_jurnal\test_jurnal\bin\it\Microsoft.Data.Edm.resources.dll
+c:\users\user\documents\visual studio 2013\Projects\test_jurnal\test_jurnal\bin\ja\Microsoft.Data.Edm.resources.dll
+c:\users\user\documents\visual studio 2013\Projects\test_jurnal\test_jurnal\bin\ko\Microsoft.Data.Edm.resources.dll
+c:\users\user\documents\visual studio 2013\Projects\test_jurnal\test_jurnal\bin\ru\Microsoft.Data.Edm.resources.dll
+c:\users\user\documents\visual studio 2013\Projects\test_jurnal\test_jurnal\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+c:\users\user\documents\visual studio 2013\Projects\test_jurnal\test_jurnal\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+c:\users\user\documents\visual studio 2013\Projects\test_jurnal\test_jurnal\bin\de\Microsoft.Data.OData.resources.dll
+c:\users\user\documents\visual studio 2013\Projects\test_jurnal\test_jurnal\bin\es\Microsoft.Data.OData.resources.dll
+c:\users\user\documents\visual studio 2013\Projects\test_jurnal\test_jurnal\bin\fr\Microsoft.Data.OData.resources.dll
+c:\users\user\documents\visual studio 2013\Projects\test_jurnal\test_jurnal\bin\it\Microsoft.Data.OData.resources.dll
+c:\users\user\documents\visual studio 2013\Projects\test_jurnal\test_jurnal\bin\ja\Microsoft.Data.OData.resources.dll
+c:\users\user\documents\visual studio 2013\Projects\test_jurnal\test_jurnal\bin\ko\Microsoft.Data.OData.resources.dll
+c:\users\user\documents\visual studio 2013\Projects\test_jurnal\test_jurnal\bin\ru\Microsoft.Data.OData.resources.dll
+c:\users\user\documents\visual studio 2013\Projects\test_jurnal\test_jurnal\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+c:\users\user\documents\visual studio 2013\Projects\test_jurnal\test_jurnal\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+c:\users\user\documents\visual studio 2013\Projects\test_jurnal\test_jurnal\bin\de\System.Spatial.resources.dll
+c:\users\user\documents\visual studio 2013\Projects\test_jurnal\test_jurnal\bin\es\System.Spatial.resources.dll
+c:\users\user\documents\visual studio 2013\Projects\test_jurnal\test_jurnal\bin\fr\System.Spatial.resources.dll
+c:\users\user\documents\visual studio 2013\Projects\test_jurnal\test_jurnal\bin\it\System.Spatial.resources.dll
+c:\users\user\documents\visual studio 2013\Projects\test_jurnal\test_jurnal\bin\ja\System.Spatial.resources.dll
+c:\users\user\documents\visual studio 2013\Projects\test_jurnal\test_jurnal\bin\ko\System.Spatial.resources.dll
+c:\users\user\documents\visual studio 2013\Projects\test_jurnal\test_jurnal\bin\ru\System.Spatial.resources.dll
+c:\users\user\documents\visual studio 2013\Projects\test_jurnal\test_jurnal\bin\zh-Hans\System.Spatial.resources.dll
+c:\users\user\documents\visual studio 2013\Projects\test_jurnal\test_jurnal\bin\zh-Hant\System.Spatial.resources.dll
+c:\users\user\documents\visual studio 2013\Projects\test_jurnal\test_jurnal\obj\Debug\test_jurnal.dll
+c:\users\user\documents\visual studio 2013\Projects\test_jurnal\test_jurnal\obj\Debug\test_jurnal.pdb
+C:\Users\user\Documents\Visual Studio 2013\Projects\test_jurnal\test_jurnal\bin\EntityFramework.SqlServer.dll
+C:\Users\user\Documents\Visual Studio 2013\Projects\test_jurnal\test_jurnal\bin\EntityFramework.SqlServer.xml
+C:\Users\user\Documents\Visual Studio 2013\Projects\test_jurnal\test_jurnal\bin\ru\EntityFramework.SqlServer.resources.dll
+C:\Users\user\Documents\Visual Studio 2013\Projects\test_jurnal\test_jurnal\obj\Debug\test_jurnal.csprojResolveAssemblyReference.cache
+C:\Users\user\Documents\Visual Studio 2013\Projects\test_jurnal\test_jurnal\bin\ClassLibrary3.dll
+C:\Users\user\Documents\Visual Studio 2013\Projects\test_jurnal\test_jurnal\bin\ClassLibrary3.pdb
+D:\test_jurnal\test_jurnal\bin\test_jurnal.dll.config
+D:\test_jurnal\test_jurnal\bin\test_jurnal.dll
+D:\test_jurnal\test_jurnal\bin\test_jurnal.pdb
+D:\test_jurnal\test_jurnal\bin\Antlr3.Runtime.dll
+D:\test_jurnal\test_jurnal\bin\DotNetOpenAuth.AspNet.dll
+D:\test_jurnal\test_jurnal\bin\DotNetOpenAuth.Core.dll
+D:\test_jurnal\test_jurnal\bin\DotNetOpenAuth.OAuth.Consumer.dll
+D:\test_jurnal\test_jurnal\bin\DotNetOpenAuth.OAuth.dll
+D:\test_jurnal\test_jurnal\bin\DotNetOpenAuth.OpenId.dll
+D:\test_jurnal\test_jurnal\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+D:\test_jurnal\test_jurnal\bin\EntityFramework.dll
+D:\test_jurnal\test_jurnal\bin\EntityFramework.SqlServer.dll
+D:\test_jurnal\test_jurnal\bin\Microsoft.Data.Edm.dll
+D:\test_jurnal\test_jurnal\bin\Microsoft.Data.OData.dll
+D:\test_jurnal\test_jurnal\bin\Microsoft.Web.Infrastructure.dll
+D:\test_jurnal\test_jurnal\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+D:\test_jurnal\test_jurnal\bin\Microsoft.Web.WebPages.OAuth.dll
+D:\test_jurnal\test_jurnal\bin\Newtonsoft.Json.dll
+D:\test_jurnal\test_jurnal\bin\System.Net.Http.Formatting.dll
+D:\test_jurnal\test_jurnal\bin\System.Spatial.dll
+D:\test_jurnal\test_jurnal\bin\System.Web.Helpers.dll
+D:\test_jurnal\test_jurnal\bin\System.Web.Http.dll
+D:\test_jurnal\test_jurnal\bin\System.Web.Http.OData.dll
+D:\test_jurnal\test_jurnal\bin\System.Web.Http.WebHost.dll
+D:\test_jurnal\test_jurnal\bin\System.Web.Mvc.dll
+D:\test_jurnal\test_jurnal\bin\System.Web.Optimization.dll
+D:\test_jurnal\test_jurnal\bin\System.Web.Razor.dll
+D:\test_jurnal\test_jurnal\bin\System.Web.WebPages.Deployment.dll
+D:\test_jurnal\test_jurnal\bin\System.Web.WebPages.dll
+D:\test_jurnal\test_jurnal\bin\System.Web.WebPages.Razor.dll
+D:\test_jurnal\test_jurnal\bin\WebGrease.dll
+D:\test_jurnal\test_jurnal\bin\WebMatrix.WebData.dll
+D:\test_jurnal\test_jurnal\bin\EntityFramework.xml
+D:\test_jurnal\test_jurnal\bin\EntityFramework.SqlServer.xml
+D:\test_jurnal\test_jurnal\bin\Newtonsoft.Json.xml
+D:\test_jurnal\test_jurnal\bin\System.Net.Http.Formatting.xml
+D:\test_jurnal\test_jurnal\bin\System.Web.Helpers.xml
+D:\test_jurnal\test_jurnal\bin\System.Web.Http.xml
+D:\test_jurnal\test_jurnal\bin\System.Web.Http.WebHost.xml
+D:\test_jurnal\test_jurnal\bin\System.Web.Mvc.xml
+D:\test_jurnal\test_jurnal\bin\System.Web.Razor.xml
+D:\test_jurnal\test_jurnal\bin\System.Web.WebPages.xml
+D:\test_jurnal\test_jurnal\bin\System.Web.WebPages.Deployment.xml
+D:\test_jurnal\test_jurnal\bin\System.Web.WebPages.Razor.xml
+D:\test_jurnal\test_jurnal\bin\WebMatrix.Data.xml
+D:\test_jurnal\test_jurnal\bin\Microsoft.Web.WebPages.OAuth.xml
+D:\test_jurnal\test_jurnal\bin\WebMatrix.WebData.xml
+D:\test_jurnal\test_jurnal\bin\DotNetOpenAuth.AspNet.xml
+D:\test_jurnal\test_jurnal\bin\DotNetOpenAuth.Core.xml
+D:\test_jurnal\test_jurnal\bin\DotNetOpenAuth.OAuth.Consumer.xml
+D:\test_jurnal\test_jurnal\bin\DotNetOpenAuth.OAuth.xml
+D:\test_jurnal\test_jurnal\bin\DotNetOpenAuth.OpenId.xml
+D:\test_jurnal\test_jurnal\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+D:\test_jurnal\test_jurnal\bin\System.Web.Http.OData.xml
+D:\test_jurnal\test_jurnal\bin\Microsoft.Data.Edm.xml
+D:\test_jurnal\test_jurnal\bin\Microsoft.Data.OData.xml
+D:\test_jurnal\test_jurnal\bin\System.Spatial.xml
+D:\test_jurnal\test_jurnal\bin\ru\EntityFramework.resources.dll
+D:\test_jurnal\test_jurnal\bin\ru\EntityFramework.SqlServer.resources.dll
+D:\test_jurnal\test_jurnal\bin\ru\System.Net.Http.Formatting.resources.dll
+D:\test_jurnal\test_jurnal\bin\ru\System.Web.Helpers.resources.dll
+D:\test_jurnal\test_jurnal\bin\ru\System.Web.Http.resources.dll
+D:\test_jurnal\test_jurnal\bin\ru\System.Web.Http.WebHost.resources.dll
+D:\test_jurnal\test_jurnal\bin\ru\System.Web.Mvc.resources.dll
+D:\test_jurnal\test_jurnal\bin\ru\System.Web.Optimization.resources.dll
+D:\test_jurnal\test_jurnal\bin\ru\System.Web.Razor.resources.dll
+D:\test_jurnal\test_jurnal\bin\ru\System.Web.WebPages.resources.dll
+D:\test_jurnal\test_jurnal\bin\ru\System.Web.WebPages.Deployment.resources.dll
+D:\test_jurnal\test_jurnal\bin\ru\System.Web.WebPages.Razor.resources.dll
+D:\test_jurnal\test_jurnal\bin\ru\WebMatrix.Data.resources.dll
+D:\test_jurnal\test_jurnal\bin\ru\Microsoft.Web.WebPages.OAuth.resources.dll
+D:\test_jurnal\test_jurnal\bin\ru\WebMatrix.WebData.resources.dll
+D:\test_jurnal\test_jurnal\bin\ru\System.Web.Http.OData.resources.dll
+D:\test_jurnal\test_jurnal\bin\de\Microsoft.Data.Edm.resources.dll
+D:\test_jurnal\test_jurnal\bin\es\Microsoft.Data.Edm.resources.dll
+D:\test_jurnal\test_jurnal\bin\fr\Microsoft.Data.Edm.resources.dll
+D:\test_jurnal\test_jurnal\bin\it\Microsoft.Data.Edm.resources.dll
+D:\test_jurnal\test_jurnal\bin\ja\Microsoft.Data.Edm.resources.dll
+D:\test_jurnal\test_jurnal\bin\ko\Microsoft.Data.Edm.resources.dll
+D:\test_jurnal\test_jurnal\bin\ru\Microsoft.Data.Edm.resources.dll
+D:\test_jurnal\test_jurnal\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+D:\test_jurnal\test_jurnal\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+D:\test_jurnal\test_jurnal\bin\de\Microsoft.Data.OData.resources.dll
+D:\test_jurnal\test_jurnal\bin\es\Microsoft.Data.OData.resources.dll
+D:\test_jurnal\test_jurnal\bin\fr\Microsoft.Data.OData.resources.dll
+D:\test_jurnal\test_jurnal\bin\it\Microsoft.Data.OData.resources.dll
+D:\test_jurnal\test_jurnal\bin\ja\Microsoft.Data.OData.resources.dll
+D:\test_jurnal\test_jurnal\bin\ko\Microsoft.Data.OData.resources.dll
+D:\test_jurnal\test_jurnal\bin\ru\Microsoft.Data.OData.resources.dll
+D:\test_jurnal\test_jurnal\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+D:\test_jurnal\test_jurnal\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+D:\test_jurnal\test_jurnal\bin\de\System.Spatial.resources.dll
+D:\test_jurnal\test_jurnal\bin\es\System.Spatial.resources.dll
+D:\test_jurnal\test_jurnal\bin\fr\System.Spatial.resources.dll
+D:\test_jurnal\test_jurnal\bin\it\System.Spatial.resources.dll
+D:\test_jurnal\test_jurnal\bin\ja\System.Spatial.resources.dll
+D:\test_jurnal\test_jurnal\bin\ko\System.Spatial.resources.dll
+D:\test_jurnal\test_jurnal\bin\ru\System.Spatial.resources.dll
+D:\test_jurnal\test_jurnal\bin\zh-Hans\System.Spatial.resources.dll
+D:\test_jurnal\test_jurnal\bin\zh-Hant\System.Spatial.resources.dll
+D:\test_jurnal\test_jurnal\obj\Debug\test_jurnal.csprojResolveAssemblyReference.cache
+D:\test_jurnal\test_jurnal\obj\Debug\test_jurnal.dll
+D:\test_jurnal\test_jurnal\obj\Debug\test_jurnal.pdb

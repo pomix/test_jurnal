@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Хранилище test2Model" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Занятия">
+    <Key>
+      <PropertyRef Name="id_занятия" />
+    </Key>
+    <Property Name="Номер_занятия" Type="int" />
+    <Property Name="Тип_занятия" Type="nvarchar" MaxLength="50" />
+    <Property Name="Код_предмета" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="UserId" Type="int" Nullable="false" />
+    <Property Name="Тема" Type="nvarchar" MaxLength="150" />
+    <Property Name="Группа1" Type="nvarchar" MaxLength="50" />
+    <Property Name="Группа2" Type="nvarchar" MaxLength="50" />
+    <Property Name="Группа3" Type="nvarchar" MaxLength="50" />
+    <Property Name="id_занятия" Type="int" Nullable="false" />
+    <Property Name="Дата" Type="datetime" />
+    <Property Name="Примечание" Type="nvarchar" MaxLength="150" />
+    <Property Name="Подгруппа" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Предметы">
+    <Key>
+      <PropertyRef Name="Код_предмета" />
+    </Key>
+    <Property Name="Код_предмета" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Название" Type="nvarchar" MaxLength="50" />
+    <Property Name="Количество_часов" Type="int" />
+    <Property Name="UserId" Type="int" />
+  </EntityType>
+  <EntityType Name="Расписание">
+    <Key>
+      <PropertyRef Name="id_расписания" />
+    </Key>
+    <Property Name="День_недели" Type="int" />
+    <Property Name="Номер_пары" Type="int" />
+    <Property Name="Код_предмета" Type="nvarchar" MaxLength="50" />
+    <Property Name="UserId" Type="int" />
+    <Property Name="Номер_аудитории" Type="nvarchar" MaxLength="50" />
+    <Property Name="Группа1" Type="nvarchar" MaxLength="50" />
+    <Property Name="Группа2" Type="nvarchar" MaxLength="50" />
+    <Property Name="Группа3" Type="nvarchar" MaxLength="50" />
+    <Property Name="id_расписания" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Тип_занятия" Type="nvarchar" MaxLength="50" />
+    <Property Name="Примечание" Type="nvarchar" MaxLength="150" />
+    <Property Name="Верхняя_неделя" Type="bit" />
+    <Property Name="Нижняя_неделя" Type="bit" />
+    <Property Name="Типовая_неделя" Type="bit" />
+    <Property Name="Нетиповая_неделя" Type="bit" />
+    <Property Name="Время" Type="nvarchar" MaxLength="20" />
+    <Property Name="Подгруппа" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Студенты">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Фамилия" Type="nvarchar" MaxLength="50" />
+    <Property Name="Имя" Type="nvarchar" MaxLength="50" />
+    <Property Name="Отчество" Type="nvarchar" MaxLength="50" />
+    <Property Name="Дата_рождения" Type="datetime" />
+    <Property Name="Подгруппа" Type="nvarchar" MaxLength="50" />
+    <Property Name="Группа" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Студенты_занятия">
+    <Key>
+      <PropertyRef Name="Номер_зачетки" />
+      <PropertyRef Name="id_занятия" />
+    </Key>
+    <Property Name="Номер_зачетки" Type="int" Nullable="false" />
+    <Property Name="Явка" Type="bit" />
+    <Property Name="Оценка" Type="float" />
+    <Property Name="id_занятия" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Студенты_Предметы">
+    <Key>
+      <PropertyRef Name="Номер_зачетки" />
+      <PropertyRef Name="Код_предмета" />
+    </Key>
+    <Property Name="Номер_зачетки" Type="int" Nullable="false" />
+    <Property Name="Код_предмета" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Рейтинг" Type="float" />
+  </EntityType>
+  <Association Name="R_11">
+    <End Role="Студенты" Type="Self.Студенты" Multiplicity="1" />
+    <End Role="Студенты_Предметы" Type="Self.Студенты_Предметы" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Студенты">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Студенты_Предметы">
+        <PropertyRef Name="Номер_зачетки" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_12">
+    <End Role="Предметы" Type="Self.Предметы" Multiplicity="1" />
+    <End Role="Студенты_Предметы" Type="Self.Студенты_Предметы" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Предметы">
+        <PropertyRef Name="Код_предмета" />
+      </Principal>
+      <Dependent Role="Студенты_Предметы">
+        <PropertyRef Name="Код_предмета" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_13">
+    <End Role="Предметы" Type="Self.Предметы" Multiplicity="1" />
+    <End Role="Занятия" Type="Self.Занятия" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Предметы">
+        <PropertyRef Name="Код_предмета" />
+      </Principal>
+      <Dependent Role="Занятия">
+        <PropertyRef Name="Код_предмета" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_16">
+    <End Role="Студенты" Type="Self.Студенты" Multiplicity="1" />
+    <End Role="Студенты_занятия" Type="Self.Студенты_занятия" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Студенты">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Студенты_занятия">
+        <PropertyRef Name="Номер_зачетки" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_17">
+    <End Role="Занятия" Type="Self.Занятия" Multiplicity="1" />
+    <End Role="Студенты_занятия" Type="Self.Студенты_занятия" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Занятия">
+        <PropertyRef Name="id_занятия" />
+      </Principal>
+      <Dependent Role="Студенты_занятия">
+        <PropertyRef Name="id_занятия" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_20">
+    <End Role="Предметы" Type="Self.Предметы" Multiplicity="0..1" />
+    <End Role="Расписание" Type="Self.Расписание" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Предметы">
+        <PropertyRef Name="Код_предмета" />
+      </Principal>
+      <Dependent Role="Расписание">
+        <PropertyRef Name="Код_предмета" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="Grup" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="ИдПредмет" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="param" Type="int" Mode="In" />
+  </Function>
+  <Function Name="Расписание_препода" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="param" Type="int" Mode="In" />
+  </Function>
+  <Function Name="РасписаниеДатаПрепод" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="param" Type="int" Mode="In" />
+    <Parameter Name="param1" Type="int" Mode="In" />
+  </Function>
+  <EntityContainer Name="Хранилище test2ModelContainer">
+    <EntitySet Name="Занятия" EntityType="Self.Занятия" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Предметы" EntityType="Self.Предметы" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Расписание" EntityType="Self.Расписание" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Студенты" EntityType="Self.Студенты" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Студенты_занятия" EntityType="Self.Студенты_занятия" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Студенты_Предметы" EntityType="Self.Студенты_Предметы" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="R_11" Association="Self.R_11">
+      <End Role="Студенты" EntitySet="Студенты" />
+      <End Role="Студенты_Предметы" EntitySet="Студенты_Предметы" />
+    </AssociationSet>
+    <AssociationSet Name="R_12" Association="Self.R_12">
+      <End Role="Предметы" EntitySet="Предметы" />
+      <End Role="Студенты_Предметы" EntitySet="Студенты_Предметы" />
+    </AssociationSet>
+    <AssociationSet Name="R_13" Association="Self.R_13">
+      <End Role="Предметы" EntitySet="Предметы" />
+      <End Role="Занятия" EntitySet="Занятия" />
+    </AssociationSet>
+    <AssociationSet Name="R_16" Association="Self.R_16">
+      <End Role="Студенты" EntitySet="Студенты" />
+      <End Role="Студенты_занятия" EntitySet="Студенты_занятия" />
+    </AssociationSet>
+    <AssociationSet Name="R_17" Association="Self.R_17">
+      <End Role="Занятия" EntitySet="Занятия" />
+      <End Role="Студенты_занятия" EntitySet="Студенты_занятия" />
+    </AssociationSet>
+    <AssociationSet Name="R_20" Association="Self.R_20">
+      <End Role="Предметы" EntitySet="Предметы" />
+      <End Role="Расписание" EntitySet="Расписание" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

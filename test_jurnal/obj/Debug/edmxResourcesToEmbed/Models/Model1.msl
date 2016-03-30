@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище test2ModelContainer" CdmEntityContainer="test2Entities">
+    <EntitySetMapping Name="Занятия">
+      <EntityTypeMapping TypeName="test2Model.Занятия">
+        <MappingFragment StoreEntitySet="Занятия">
+          <ScalarProperty Name="Номер_занятия" ColumnName="Номер_занятия" />
+          <ScalarProperty Name="Тип_занятия" ColumnName="Тип_занятия" />
+          <ScalarProperty Name="Код_предмета" ColumnName="Код_предмета" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="Тема" ColumnName="Тема" />
+          <ScalarProperty Name="Группа1" ColumnName="Группа1" />
+          <ScalarProperty Name="Группа2" ColumnName="Группа2" />
+          <ScalarProperty Name="Группа3" ColumnName="Группа3" />
+          <ScalarProperty Name="id_занятия" ColumnName="id_занятия" />
+          <ScalarProperty Name="Дата" ColumnName="Дата" />
+          <ScalarProperty Name="Примечание" ColumnName="Примечание" />
+          <ScalarProperty Name="Подгруппа" ColumnName="Подгруппа" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Предметы">
+      <EntityTypeMapping TypeName="test2Model.Предметы">
+        <MappingFragment StoreEntitySet="Предметы">
+          <ScalarProperty Name="Код_предмета" ColumnName="Код_предмета" />
+          <ScalarProperty Name="Название" ColumnName="Название" />
+          <ScalarProperty Name="Количество_часов" ColumnName="Количество_часов" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Расписание">
+      <EntityTypeMapping TypeName="test2Model.Расписание">
+        <MappingFragment StoreEntitySet="Расписание">
+          <ScalarProperty Name="День_недели" ColumnName="День_недели" />
+          <ScalarProperty Name="Номер_пары" ColumnName="Номер_пары" />
+          <ScalarProperty Name="Код_предмета" ColumnName="Код_предмета" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="Номер_аудитории" ColumnName="Номер_аудитории" />
+          <ScalarProperty Name="Группа1" ColumnName="Группа1" />
+          <ScalarProperty Name="Группа2" ColumnName="Группа2" />
+          <ScalarProperty Name="Группа3" ColumnName="Группа3" />
+          <ScalarProperty Name="id_расписания" ColumnName="id_расписания" />
+          <ScalarProperty Name="Тип_занятия" ColumnName="Тип_занятия" />
+          <ScalarProperty Name="Примечание" ColumnName="Примечание" />
+          <ScalarProperty Name="Верхняя_неделя" ColumnName="Верхняя_неделя" />
+          <ScalarProperty Name="Нижняя_неделя" ColumnName="Нижняя_неделя" />
+          <ScalarProperty Name="Типовая_неделя" ColumnName="Типовая_неделя" />
+          <ScalarProperty Name="Нетиповая_неделя" ColumnName="Нетиповая_неделя" />
+          <ScalarProperty Name="Время" ColumnName="Время" />
+          <ScalarProperty Name="Подгруппа" ColumnName="Подгруппа" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Студенты">
+      <EntityTypeMapping TypeName="test2Model.Студенты">
+        <MappingFragment StoreEntitySet="Студенты">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="Фамилия" ColumnName="Фамилия" />
+          <ScalarProperty Name="Имя" ColumnName="Имя" />
+          <ScalarProperty Name="Отчество" ColumnName="Отчество" />
+          <ScalarProperty Name="Дата_рождения" ColumnName="Дата_рождения" />
+          <ScalarProperty Name="Подгруппа" ColumnName="Подгруппа" />
+          <ScalarProperty Name="Группа" ColumnName="Группа" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Студенты_занятия">
+      <EntityTypeMapping TypeName="test2Model.Студенты_занятия">
+        <MappingFragment StoreEntitySet="Студенты_занятия">
+          <ScalarProperty Name="Номер_зачетки" ColumnName="Номер_зачетки" />
+          <ScalarProperty Name="Явка" ColumnName="Явка" />
+          <ScalarProperty Name="Оценка" ColumnName="Оценка" />
+          <ScalarProperty Name="id_занятия" ColumnName="id_занятия" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Студенты_Предметы">
+      <EntityTypeMapping TypeName="test2Model.Студенты_Предметы">
+        <MappingFragment StoreEntitySet="Студенты_Предметы">
+          <ScalarProperty Name="Номер_зачетки" ColumnName="Номер_зачетки" />
+          <ScalarProperty Name="Код_предмета" ColumnName="Код_предмета" />
+          <ScalarProperty Name="Рейтинг" ColumnName="Рейтинг" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="Расписание_препода" FunctionName="Хранилище test2Model.Расписание_препода">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="test2Model.Расписание_препода_Result">
+          <ScalarProperty Name="День_недели" ColumnName="День_недели" />
+          <ScalarProperty Name="Номер_пары" ColumnName="Номер_пары" />
+          <ScalarProperty Name="Код_предмета" ColumnName="Код_предмета" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="Номер_аудитории" ColumnName="Номер_аудитории" />
+          <ScalarProperty Name="Группа1" ColumnName="Группа1" />
+          <ScalarProperty Name="Группа2" ColumnName="Группа2" />
+          <ScalarProperty Name="Группа3" ColumnName="Группа3" />
+          <ScalarProperty Name="id_расписания" ColumnName="id_расписания" />
+          <ScalarProperty Name="Тип_занятия" ColumnName="Тип_занятия" />
+          <ScalarProperty Name="Примечание" ColumnName="Примечание" />
+          <ScalarProperty Name="Верхняя_неделя" ColumnName="Верхняя_неделя" />
+          <ScalarProperty Name="Нижняя_неделя" ColumnName="Нижняя_неделя" />
+          <ScalarProperty Name="Типовая_неделя" ColumnName="Типовая_неделя" />
+          <ScalarProperty Name="Нетиповая_неделя" ColumnName="Нетиповая_неделя" />
+          <ScalarProperty Name="Время" ColumnName="Время" />
+          <ScalarProperty Name="Подгруппа" ColumnName="Подгруппа" />
+          <ScalarProperty Name="Название" ColumnName="Название" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="ИдПредмет" FunctionName="Хранилище test2Model.ИдПредмет" />
+    <FunctionImportMapping FunctionImportName="РасписаниеДатаПрепод" FunctionName="Хранилище test2Model.РасписаниеДатаПрепод">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="test2Model.РасписаниеДатаПрепод_Result">
+          <ScalarProperty Name="День_недели" ColumnName="День_недели" />
+          <ScalarProperty Name="Номер_пары" ColumnName="Номер_пары" />
+          <ScalarProperty Name="Код_предмета" ColumnName="Код_предмета" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="Номер_аудитории" ColumnName="Номер_аудитории" />
+          <ScalarProperty Name="Группа1" ColumnName="Группа1" />
+          <ScalarProperty Name="Группа2" ColumnName="Группа2" />
+          <ScalarProperty Name="Группа3" ColumnName="Группа3" />
+          <ScalarProperty Name="id_расписания" ColumnName="id_расписания" />
+          <ScalarProperty Name="Тип_занятия" ColumnName="Тип_занятия" />
+          <ScalarProperty Name="Примечание" ColumnName="Примечание" />
+          <ScalarProperty Name="Верхняя_неделя" ColumnName="Верхняя_неделя" />
+          <ScalarProperty Name="Нижняя_неделя" ColumnName="Нижняя_неделя" />
+          <ScalarProperty Name="Типовая_неделя" ColumnName="Типовая_неделя" />
+          <ScalarProperty Name="Нетиповая_неделя" ColumnName="Нетиповая_неделя" />
+          <ScalarProperty Name="Время" ColumnName="Время" />
+          <ScalarProperty Name="Подгруппа" ColumnName="Подгруппа" />
+          <ScalarProperty Name="Название" ColumnName="Название" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="Grup" FunctionName="Хранилище test2Model.Grup" />
+  </EntityContainerMapping>
+</Mapping>

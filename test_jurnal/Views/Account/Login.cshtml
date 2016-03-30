@@ -1,0 +1,59 @@
+﻿@model test_jurnal.Models.LoginModel
+
+@{
+    ViewBag.Title = "Выполнить вход";
+}
+<div id="body">
+    <div class="row">
+    <hgroup class="title">
+    <h1>@ViewBag.Title.</h1>
+</hgroup></div>
+    
+
+    <section id="loginForm">
+        <h2>Используйте для входа локальную учетную запись.</h2>
+        @using (Html.BeginForm(new { ReturnUrl = ViewBag.ReturnUrl }))
+        {
+            @Html.AntiForgeryToken()
+            @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>Форма входа</legend>
+        <div class="row">
+            <div class="col-sm-2">
+                @Html.LabelFor(m => m.UserName)
+            </div>
+            @Html.TextBoxFor(m => m.UserName)
+            @Html.ValidationMessageFor(m => m.UserName)
+        </div>
+        <div class="row">
+            <div class="col-sm-2">
+
+                @Html.LabelFor(m => m.Password)
+            </div>
+            @Html.PasswordFor(m => m.Password)
+            @Html.ValidationMessageFor(m => m.Password)
+        </div>
+        <div class="row">
+            <div class="col-sm-5 list-inline">
+                @Html.CheckBoxFor(m => m.RememberMe)
+                @Html.LabelFor(m => m.RememberMe, new { @class = "checkbox" })
+            </div>
+        </div>
+                
+                <input type="submit" class="btn btn-success" value="Выполнить вход" />
+    </fieldset>
+            <p>
+                @Html.ActionLink("Зарегистрируйтесь", "Register"), если у вас нет учетной записи.
+            </p>
+        }
+    </section>
+
+    <section class="social" id="socialLoginForm">
+        <hr2>Используйте для входа другую службу.</hr2>
+        @Html.Action("ExternalLoginsList", new { ReturnUrl = ViewBag.ReturnUrl })
+    </section>
+</div>
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

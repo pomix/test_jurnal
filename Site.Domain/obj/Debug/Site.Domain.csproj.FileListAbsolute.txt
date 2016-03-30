@@ -1,0 +1,4 @@
+C:\Users\user\documents\visual studio 2013\Projects\test_jurnal\Site.Domain\bin\Debug\Site.Domain.dll
+C:\Users\user\documents\visual studio 2013\Projects\test_jurnal\Site.Domain\bin\Debug\Site.Domain.pdb
+C:\Users\user\documents\visual studio 2013\Projects\test_jurnal\Site.Domain\obj\Debug\Site.Domain.dll
+C:\Users\user\documents\visual studio 2013\Projects\test_jurnal\Site.Domain\obj\Debug\Site.Domain.pdb

@@ -1,0 +1,429 @@
+﻿@model test_jurnal.Models.Entity.Расписание
+@{
+    ViewBag.Title = "Home Page";
+}
+@section styles
+{
+    @Styles.Render("~/styles/FileUpload")
+}
+
+<div id="body">
+    <div class="container-fluid">
+        <div class="tabs">
+            <ul class="nav nav-tabs">
+                <li ><a href="#panel1" data-toggle="tab">Ежедневник</a></li>
+                <li class="active"><a href="#panel2" data-toggle="tab">Расписание</a></li>
+            </ul>
+            <div class="tab-content">
+                <div id="panel1" class="tab-pane fade in ">
+                    <div class="row">
+                        <div class="col-md-9 col-md-offset-1">
+                            <div class="table-responsive">
+                                <table class="table table-striped table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th class="center headcolor">День</th>
+                                            <th class="center headcolor" style="width: 50px;">Часы</th>
+                                            <th class="center headcolor">Название предмета</th>
+                                            <th class="center headcolor" style="width: 75px">Группа</th>
+                                            <th class="center headcolor">Комментарий</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td rowspan="5" class="headcolor vertical"> П о н е д е л ь н и к</td>
+                                            <td>8.30-10.05</td>
+                                            <td data-toggle="modal" data-target="#modal-subject"></td>
+                                            <td data-toggle="modal" data-target="#modalGroup"> </td>
+                                            <td data-toggle="modal" data-target="#modalComment"></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>10.25-12.00</td>
+                                            <td data-toggle="modal" data-target="#modal-subject"></td>
+                                            <td data-toggle="modal" data-target="#modalGroup"></td>
+                                            <td data-toggle="modal" data-target="#modalComment"></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>12.30-14.05</td>
+                                            <td data-toggle="modal" data-target="#modal-subject"></td>
+                                            <td data-toggle="modal" data-target="#modalGroup"></td>
+                                            <td data-toggle="modal" data-target="#modalComment"></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>14.20-15.55</td>
+                                            <td data-toggle="modal" data-target="#modal-subject"></td>
+                                            <td data-toggle="modal" data-target="#modalGroup"></td>
+                                            <td data-toggle="modal" data-target="#modalComment"></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>16.05-17.40</td>
+                                            <td data-toggle="modal" data-target="#modal-subject"></td>
+                                            <td data-toggle="modal" data-target="#modalGroup"></td>
+                                            <td data-toggle="modal" data-target="#modalComment"></td>
+                                        </tr>
+                                        </table>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="btn-group btn-group-lg">
+                                    <button class="btn btn-default glyphicon glyphicon-circle-arrow-left" id="back-day"></button>
+                                    <button class="btn btn-default glyphicon glyphicon-circle-arrow-right" id="next-day"></button>
+                                </div>
+                                <div class="panel-group" id="accordion">
+                                    <div class="panel panel-default block-day">
+                                        <div class="panel-heading">
+                                            <a href="#collapse-1" data-parent="#accordion" data-toggle="collapse">#1</a> Понедельник
+                                        </div>
+                                        <div id="collapse-1" class="panel-collapse collapse">
+                                            <div class="panel-body"></div>
+                                        </div>
+                                    </div>
+                                    <div class="panel panel-default block-day">
+                                        <div class="panel-heading">
+                                            <a href="#collapse-2" data-parent="#accordion" data-toggle="collapse">#2</a> Вторник
+                                        </div>
+                                        <div id="collapse-2" class="panel-collapse collapse ">
+                                            <div class="panel-body"></div>
+                                        </div>
+                                    </div>
+                                    <div class="panel panel-default block-day">
+                                        <div class="panel-heading">
+                                            <a href="#collapse-3" data-parent="#accordion" data-toggle="collapse">#3</a> Среда
+                                        </div>
+                                        <div id="collapse-3" class="panel-collapse collapse">
+                                            <div class="panel-body"></div>
+                                        </div>
+                                    </div>
+                                    <div class="panel panel-default block-day">
+                                        <div class="panel-heading">
+                                            <a href="#collapse-4" data-parent="#accordion" data-toggle="collapse">#4</a> Четверг
+                                        </div>
+                                        <div id="collapse-4" class="panel-collapse collapse ">
+                                            <div class="panel-body"></div>
+                                        </div>
+                                    </div>
+                                    <div class="panel panel-default block-day">
+                                        <div class="panel-heading">
+                                            <a href="#collapse-5" data-parent="#accordion" data-toggle="collapse">#5</a> Пятница
+                                        </div>
+                                        <div id="collapse-5" class="panel-collapse collapse ">
+                                            <div class="panel-body"></div>
+                                        </div>
+                                    </div>
+                                    <div class="panel panel-default block-day">
+                                        <div class="panel-heading">
+                                            <a href="#collapse-6" data-parent="#accordion" data-toggle="collapse">#6</a> Суббота
+                                        </div>
+                                        <div id="collapse-6" class="panel-collapse collapse ">
+                                            <div class="panel-body"></div>
+                                        </div>
+                                    </div>
+                                    <div class="panel panel-danger block-day">
+                                        <div class="panel-heading">
+                                            <a href="#collapse-7" data-parent="#accordion" data-toggle="collapse">#7</a> Воскресенье
+                                        </div>
+                                        <div id="collapse-7" class="panel-collapse collapse ">
+                                            <div class="panel-body"></div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <div id="panel2" class="tab-pane fade in active">
+                    @Html.Action("PartialRaspisanie")
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="modal-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button class="close" type="button" data-dismiss="modal">x</button>
+                <h4 class="modal-title" id="myModalLabel">Название модального окна</h4>
+            </div>
+            <form method="post" class="form-inline" role="form">
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label class="control-label">Название предмета</label>
+                        <input type="text" name="Название" class="form-control" id="namePredmet" value="" /><br />
+                        <label class="control-label">Номер аудитории</label>   
+                        <input type="text" name="Номер_аудитории" class="form-control" value="" /><br />
+                       <input type="hidden" name="id_расписания" />
+                        <input type="hidden" name="День_недели" />
+                        <input type="hidden" name="Номер_пары" />
+
+                              <label class="control-label">Тип_занятия</label>
+                        <select name="Тип_занятия" class="form-control">
+                            <option value="Лекция" selected="selected">Лекция</option>
+                            <option value="Семинар">Семинар</option>
+                            <option value="Лабораторные">Лабораторные</option>
+                            <option value="Лабораторные">Особое</option>
+                        </select><br />
+
+                        <label class="control-label">Верхняя неделя</label>
+                            <input type="checkbox" class="form-control" name="Верхняя_неделя">
+                       <br />
+                        <label class="control-label">Нижняя неделя</label>
+                            <input type="checkbox" class="form-control" name="Нижняя_неделя">
+                        <br />
+                        <div class="input-group">
+                            <div class="btn btn-default input-group-addon" data-toggle="modal" data-target="#modal-3">Добавить Группу</div>
+                            <input type="text" class="form-control ac" id="exampleInputAmount" placeholder="Группа1" name="Группа1">
+                            <div class="btn btn-default input-group-addon zagruzka-grup" data-toggle="modal" data-target="#modal-2" disabled="disabled">Просмотреть Группу</div>
+                           
+                        </div>
+                        <br />
+                        
+                        <label class="control-label">Группа2</label>
+                        <input type="text" name="Группа2" class="form-control ac" value="" /><br />
+                        <label class="control-label">Группа3</label>
+                        <input type="text" name="Группа3" class="form-control ac" value="" /><br />
+                        <label class="control-label">Подгруппа</label>
+                        <input type="text" name="Подгруппа" class="form-control ac" value="" /><br />
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-default" type="button" data-dismiss="modal">Закрыть</button>
+                    <button class="btn btn-primary" type="submit">Добавить</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="modal-2">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button class="close" type="button" data-dismiss="modal">x</button>
+                <h4 class="modal-title" id="myModalLabel">Название модального окна</h4>
+            </div>
+            <div class="modal-body">
+                <div class="zagruzka-contenta">
+
+                </div>
+                <div class="form-group">
+                    <form action="/" method="post" class="form-horizontal" id="addForm">
+                       <label class="form-control">Фамилия</label><input type="text" name="Фамилия" class="form-control" /><br />
+                        <label class="form-control">Имя</label><input type="text" name="Имя" class="form-control" /><br />
+                        <label class="form-control">Отчество</label><input type="text" name="Отчество" class="form-control" /><br />
+                        <button type="submit" class="btn btn-primary">Добавить</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="modal-3">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button class="close" type="button" data-dismiss="modal">x</button>
+                <h4 class="modal-title" id="myModalLabel">Название модального окна</h4>
+            </div>
+            <div class="modal-body">
+                @using (Html.BeginForm("File", "Home", FormMethod.Post, new { enctype = "multipart/form-data"}))
+                {
+                    <table>
+                        <tr>
+                            <td>File:</td>
+                            <td><input type="file" name="Files" id="Files" multiple /></td>
+                            
+                            
+                        </tr>
+                        <tr>
+                            <td>Группа</td>
+                            <td><input type="text" name="str" id="str" /></td>
+                        </tr>
+                        <tr>
+                            <td>деканат</td>
+                            <td>
+                                <select name="dekanat" class="form-control">
+                                    <option value="1" selected="selected">ЭТФ</option>
+                                    <option value="2">Заоч.</option>
+                                    <option value="3">Росс.</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td><input type="submit" name="submit" value="Upload" /></td>
+                        </tr>
+                    </table>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal" id="modal-subject">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button class="close" type="button" data-dismiss="modal">
+                    <span class="glyphicon glyphicon-remove"></span>
+                </button>
+                <h4 class="modat-title" style="text-align: center; vertical-align: middle;">
+                    Добавить предмет
+                </h4>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-4 col-xs-4">
+                            <label class="control-label" for="nameSubject"> Название предмета</label>
+                        </div>
+                        <div class="col-md-8 col-sm-8 col-xs-8">
+                            <input type="text" name="Название предмета" class="form-control" id="nameSubject" value autocomplete="off" role="textbox" aria-autocomplete="list" aria-haspopup="true">
+                        </div>
+                    </div>
+
+                    <div class="row" style="margin-top: 5px;">
+                        <div class="col-md-4 col-sm-4 col-xs-4">
+                            <label class="control-label" for="NumberAuditory">Номер аудитории</label>
+                        </div>
+                        <div class="col-md-8 col-sm-8 col-xs-8">
+                            <input type="text" name="Номер аудитории" class="form-control" id="NumberAuditory" value autocomplete="off" role="textbox" aria-autocomplete="list" aria-haspopup="true">
+                        </div>
+                    </div>
+
+                    <div class="row" style="margin-top: 5px;">
+                        <div class="col-md-4 col-sm-4 col-xs-4">
+                            <label class="control-label" for="TypeOfOccupation"> Тип занятия</label>
+                        </div>
+                        <div class="col-md-8 col-sm-8 col-xs-8">
+                            <select name="Тип_занятия" class="form-control" id="TypeOfOccupation">
+                                <option value="Лекция" selected="selected">Лекция</option>
+                                <option value="Семинар">Семинар</option>
+                                <option value="Лабораторные">Лабораторные</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="row" style="margin-top: 5px;">
+                        <div class="col-md-4 col-sm-4 col-xs-4">
+                            <label class="control-label" for="nameSubject"> Неделя</label>
+                        </div>
+                        <div class="col-md-8 col-sm-8 col-xs-8">
+                            <select name="неделя" class="form-control">
+                                <option value="Верхняя" selected="selected">Верхняя</option>
+                                <option value="Семинар">Нижняя</option>
+                                <option value="Лабораторные">Обычная</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button id="CancelSubject" class="btn btn-danger" type="button" data-dismiss="modal"> Отмена</button>
+                <button id="ClearSubject" class="btn btn-info" type="button" data-dismiss="modal">Очистить</button>
+                <button id="AddSubject" class="btn btn-success" type="button" data-dismiss="modal">Принять</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="modalComment">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button class="close" type="button" data-dismiss="modal">
+                    <span class="glyphicon glyphicon-remove"></span>
+                </button>
+                <h4 class="modat-title" style="text-align: center; vertical-align: middle;">
+                    Добавить комментарий
+                </h4>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <textarea class="form-control" rows="5" id="comment"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button id="CancelComment" class="btn btn-danger" type="button" data-dismiss="modal"> Отмена</button>
+                <button id="ClearComment" class="btn btn-info" type="button" data-dismiss="modal">Очистить</button>
+                <button id="AddComment" class="btn btn-success" type="button" data-dismiss="modal">Принять</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal" id="modalGroup">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button class="close" type="button" data-dismiss="modal">
+                    <span class="glyphicon glyphicon-remove"></span>
+                </button>
+                <h4 class="modat-title" style="text-align: center; vertical-align: middle;">
+                    Добавить группу
+                </h4>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-4 col-xs-4 centerForCollumn">
+                            <label class="control-label" for="nameSubject"> Группа 1 </label>
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-xs-4">
+                            <select name="Тип_занятия" class="form-control" id="TypeOfOccupation"></select>
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-xs-4">
+                            <button class="btn btn-info" disabled> Просмотреть </button>
+                        </div>
+                    </div>
+                    <div class="row" style="height: 10px; color: burlywood"></div>
+                    <div class="row">
+                        <div class="col-md-4 col-sm-4 col-xs-4 centerForCollumn">
+                            <label class="control-label" for="nameSubject"> Группа 2 </label>
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-xs-4">
+                            <select name="Тип_занятия" class="form-control" id="TypeOfOccupation"></select>
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-xs-4">
+                            <button class="btn btn-info" disabled> Просмотреть </button>
+                        </div>
+                    </div>
+                    <div class="row" style="height: 10px; color: burlywood"></div>
+                    <div class="row">
+                        <div class="col-md-4 col-sm-4 col-xs-4 centerForCollumn">
+                            <label class="control-label" for="nameSubject"> Группа 3 </label>
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-xs-4">
+                            <select name="Тип_занятия" class="form-control" id="TypeOfOccupation"></select>
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-xs-4">
+                            <button class="btn btn-info" disabled> Просмотреть </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button id="CancelGroup" class="btn btn-danger" type="button" data-dismiss="modal"> Отмена</button>
+                <button id="ClearGroup" class="btn btn-info" type="button" data-dismiss="modal">Очистить</button>
+                <button id="AddGroup" class="btn btn-success" type="button" data-dismiss="modal">Принять</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+@section scripts
+{
+
+    @Scripts.Render("~/scripts/FileUpload")
+<script src="~/Scripts/myJS.js"></script>
+
+}

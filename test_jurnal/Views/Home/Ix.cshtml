@@ -1,0 +1,128 @@
+﻿@model test_jurnal.Models.Entity.Расписание
+
+@{
+    ViewBag.Title = "Ix";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Ix</h2>
+
+<fieldset>
+    <legend>Расписание</legend>
+    <input type="text" class="form-control" id="tokenfield" />   <input type="text" name="Код_предмета"  />
+    <br /><br /><br /><br />
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.День_недели)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.День_недели)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Номер_пары)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Номер_пары)
+    </div>
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Код_предмета)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Код_предмета)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.UserId)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.UserId)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Номер_аудитории)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Номер_аудитории)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Группа)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Группа)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Подгруппа)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Подгруппа)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Поток)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Поток)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.id_расписания)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.id_расписания)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Тип_занятия)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Тип_занятия)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Примечание)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Примечание)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Верхняя_неделя)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Верхняя_неделя)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Нижняя_неделя)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Нижняя_неделя)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Типовая_неделя)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Типовая_неделя)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Нетиповая_неделя)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Нетиповая_неделя)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Время)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Время)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id=Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
